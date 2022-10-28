@@ -45,7 +45,7 @@ main .star-icon{
     height: 40px;
     width: 40px;
     border-radius: 20px;
-    background-color: var(--dark-gray);
+    background-color: var(--very-dark-blue);
 }
 
 .rating h1{
@@ -73,7 +73,7 @@ main .star-icon{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: var(--dark-gray);
+    background-color: var(--very-dark-blue);
     color: var(--white);
     width: 44px;
     height: 44px;
@@ -87,17 +87,6 @@ main .star-icon{
 .number:active{
     background-color: var(--white);
     color: var(--orange);
-}
-
-/*Thank you card */
-
-main.thank-you{
-    display: none;
-    background-color: var(--dark-blue);
-    padding: 32px;
-    max-width: 370px;
-    border-radius: 25px;
-    text-align: center;
 }
 
 .btn {
@@ -122,8 +111,19 @@ main.thank-you{
 }
 
 .btn:active{
-    background-color: var(--dark-blue);
+    background-color: var(--very-dark-blue);
     color: var(--orange);
+}
+
+/*Thank you card */
+
+main.thank-you{
+    display: none;
+    background-color: var(--dark-blue);
+    padding: 32px;
+    max-width: 370px;
+    border-radius: 25px;
+    text-align: center;
 }
 
 /* JavaScript */
@@ -131,7 +131,29 @@ main.thank-you.active{
     display: block;
 }
 
+.user-selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 22px 0;
+}
 
+.user-selection > p {
+    color: var(--orange);
+    background-color: var(--very-dark-blue);
+    padding: 3px 16px;
+    border-radius: 15px;
+}
+
+.ty-title {
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.ty-message {
+    color: var(--light-grey);
+    line-height: 1.7;
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
